@@ -1,0 +1,111 @@
+body{
+    background-color: #ABD399;
+    margin:0;
+    padding:0;
+}
+.container-fluid{
+    padding:0;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+header{
+    background-color:#609B53;
+    height: 50px;
+    padding-left: 100px;
+    width: 100%;
+}
+header h1{
+    line-height: 45px;
+    color:white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:gray;
+    text-shadow: 2px 2px 2px #000;
+}
+#toolbar{
+    line-height: 45px;
+    padding: 0 10%;
+}
+
+#profile-area{
+    position: absolute;
+    right: 20px;
+    gap:10px;
+    /* display:flex;
+    flex-direction: row; */
+    line-height:45px ;
+    
+     
+}
+
+.main{
+    background-color:#ABD399;
+    display:flex;
+    flex-direction: row;
+    height:100vh;
+}
+aside{
+    flex-basis: 15%;
+    padding:20px;
+}
+#list-of-people{
+    background-color:white;
+}
+
+#shopping-cart{
+    position: absolute;
+    right: 20px;
+}
+
+#username{
+    color: white;
+}
+
+#toolbar a{
+    text-decoration: None;
+    color: white;
+    font-size: 120%;
+}
+
+#btn-filter-submit{
+    padding: 0 30%;
+}
+
+.person-info-display{
+    border: solid white;
+    height: fit-content;
+    margin: 10px;
+}
+.person-travel-history{
+    text-decoration: None;
+}
+.person-avatar{
+    width:10%;
+    height:10%;
+    padding: 10px;
+}
+.to-person-travel-history, .to-personal-info{
+    border: solid lightgray;
+    width: 200px;
+    margin-bottom: 15px;
+}
+.person-info-display a:link, .to-personal-info a:link, .more-info a:link{
+    color: #609B53;
+}
+
+.person-info-display a:visited, .to-personal-info a:visited, .more-info a:visited{
+    color: #609B53;
+}
+.addition-info-1{
+    text-align: center;
+}
+.last-known-place, .last-people-in-contact{
+    text-align: start;
+}
+.more-info{
+    text-decoration: none;
+}
+.verticalLine {
+    border-left: solid lightgray;
+}
