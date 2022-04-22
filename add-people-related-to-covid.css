@@ -51,6 +51,7 @@ aside{
 }
 #content{
     background-color:white;
+    height:fit-content;
     display: flex;
     flex-direction: column;
 }
@@ -114,4 +115,11 @@ aside{
 }
 .verticalLine {
     border-left: solid lightgray;
+}
+#list-of-resuls a{
+    text-decoration: None;
+    padding: 5px;
+}
+#list-of-resuls{
+    text-align: center;
 }
