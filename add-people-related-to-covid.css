@@ -49,10 +49,16 @@ aside{
     flex-basis: 15%;
     padding:20px;
 }
-#list-of-people{
+#content{
     background-color:white;
+    display: flex;
+    flex-direction: column;
 }
-
+#add-person-btn{
+    background-color: #ABD399;
+    align-self: flex-end;
+    margin: 20px;
+}
 #shopping-cart{
     position: absolute;
     right: 20px;
