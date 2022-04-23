@@ -29,7 +29,7 @@ header h1{
 }
 
 #profile-area{
-    position: absolute;
+    /* position: absolute; */
     right: 20px;
     gap:10px;
     /* display:flex;
@@ -62,6 +62,7 @@ aside{
     margin: 20px;
 }
 
+
 #username{
     color: white;
 }
@@ -76,54 +77,61 @@ aside{
     padding: 0 30%;
 }
 
-.person-info-display{
-    border: solid white;
-    height: fit-content;
-    margin: 10px;
-}
-.person-travel-history{
-    text-decoration: None;
-}
-.person-avatar{
-    width:10%;
-    height:10%;
-    padding: 10px;
-}
-.to-person-travel-history, .to-personal-info{
-    border: solid lightgray;
-    width: 200px;
-    margin-bottom: 15px;
-}
-.person-info-display a:link, .to-personal-info a:link, .more-info a:link{
+#content h3{
+    padding: 30px;
     color: #609B53;
+    
 }
 
-.person-info-display a:visited, .to-personal-info a:visited, .more-info a:visited{
-    color: #609B53;
+#person-avatar{
+    max-width: 200px;
+    max-height: 200px;
+    align-self: center;
+    background-color: #439b19;
+    margin-bottom: 50px;
 }
-.addition-info-1{
-    text-align: center;
+.info-block{
+    padding-bottom: 40px;
 }
-.last-known-place, .last-people-in-contact{
-    text-align: start;
+
+.input-box{
+    width: 100%;
+    height: 30px;
+    border: solid lightgray;
+    border-radius: 5px;
+    margin-bottom: 5px;
 }
-.more-info{
-    text-decoration: none;
+
+
+.three-row-input-box{
+    border: solid lightgray;
+    border-radius: 5px;
+    margin-bottom: 5px;
 }
-.verticalLine {
-    border-left: solid lightgray;
+
+label{
+    padding-right: 30px;
 }
-#list-of-resuls a{
-    text-decoration: None;
-    padding: 5px;
+
+#nationality, #year-born{
+    width: 100%;
 }
-#list-of-resuls a:link{
-    color: #609B53;
+
+.group-answer{
+    margin-bottom: 10px;
 }
-#list-of-resuls a:visited{
-    color: #609B53;
+
+#save-info-btn{
+    width: fit-content;
+    background-color: #609B53;
+    align-self: center;
+    margin-bottom: 100px;
 }
-#list-of-resuls{
-    text-align: center;
-    color: #609B53;
+
+b{
+    color: red;
 }
+
+
+
+
