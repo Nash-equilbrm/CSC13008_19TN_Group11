@@ -1,5 +1,4 @@
 body{
-    background-color: white;
     margin:0;
     padding:0;
 }
@@ -25,24 +24,12 @@ header h1{
 }
 
 .main{
+    
     display:flex;
     flex-direction: row;
     height:100vh;
 }
-#profile-area{
-    position: absolute;
-    right: 20px;
-    gap:10px;
-    align-items: center;
-    display:flex;
-    flex-direction: row;
-    height:50px;
-}
-#username{
-    line-height: 50px;
-}
-.search-bar{
-    height: 7%;
+.sort-bar,.search-bar{
     display:flex;
     flex-direction: row;
 }
@@ -51,11 +38,38 @@ header h1{
     flex-direction: row;
     background-color:white;
 }
-
+#page-address{
+    color:#609B53;
+}
 #shopping-cart{
     position: absolute;
     right: 20px;
 }
-#images{
-    margin:20px 8%;
+#profile-area{
+    position: absolute;
+    right: 80px;
+    gap:10px;
+    align-items: center;
+    display:flex;
+    flex-direction: row;
+}
+#username{
+    line-height: 50px;
+}
+/* viet tiep o day */
+#img-0,img-1, img-2, img-3,img-4{
+    border: 1px solid lightgray;
+}
+#product-area{
+    display:flex;
+    flex-direction: row;
+}
+#img-container,#infor-container{
+    flex-basis:50%;
+    background-color:antiquewhite;
+    border: 1px solid lightgray;
+}
+
+#home{
+    line-height: 50px;
 }
