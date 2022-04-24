@@ -71,7 +71,7 @@ aside{
     font-size: 120%;
 }
 
-#satistic-pop-up{
+#satistic-pop-up, #account-menu-pop-up{
     background-color: #609B53;
     border: none;
     font-size: 120%;
@@ -112,7 +112,15 @@ aside{
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 #btn-filter-submit{
-    padding: 0 30%;
+    padding: 2% 30%;
+    background-color: rgb(252, 112, 5);
+    border: none;
+
+}
+#name, #age, #hometowns{
+    border: none;
+    border-radius: 5px;
+    width: 100%;
 }
 
 .person-info-display{
