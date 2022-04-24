@@ -29,18 +29,15 @@ header h1{
 }
 
 #profile-area{
-    position: absolute;
+    /* position: absolute; */
     right: 20px;
     gap:10px;
-    
+    /* display:flex;
+    flex-direction: row; */
     line-height:45px ;
     
      
 }
-#username{
-    font-size: 120%;
-}
-
 
 .main{
     background-color:#ABD399;
@@ -125,16 +122,34 @@ aside{
     color: #609B53;
     
 }
+#account-number span{
+    color: black;
+    font-style: italic;
+}
 
-#person-avatar{
+#qr-code{
     max-width: 200px;
     max-height: 200px;
     align-self: center;
-    background-color: #439b19;
+    background-color: white;
     margin-bottom: 50px;
 }
 .info-block{
+    display: flex;
+    flex-direction: column;
     padding-bottom: 40px;
+}
+
+.info-block label{
+    font-size: large;
+    font-style: italic;
+    color: gray;
+}
+
+.info-box {
+    margin: 0 40px;
+    border: solid 2px cyan;
+    border-radius: 8px;
 }
 
 .input-box{
@@ -160,9 +175,6 @@ label{
     width: 100%;
 }
 
-.group-answer{
-    margin-bottom: 10px;
-}
 
 #save-info-btn{
     width: fit-content;
