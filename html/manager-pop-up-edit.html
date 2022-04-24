@@ -36,14 +36,31 @@
                </li>  
                </ul>
                <div class="align-items-end text-white border-2 rounded-pill" >
-                  <i class="fa-solid fa-user"></i>
+                  <div id="profile-area" class="d-inline-block">
+                     <div class="">
+                         <i class="fa-solid fa-user "></i>
+                         <div class="btn-group">
+                             <button type="button" class="btn btn-infor dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                             </button>
+                             <ul class="dropdown-menu">
+                                <li>
+                                 <p id="username">Nguyễn Văn A</p>
+                                </li>
+                               <li><a class="dropdown-item" href="#">Đơn mua</a></li>
+                               <li><a class="dropdown-item" href="#">Hồ sơ cá nhân</a></li>
+                               <li><hr class="dropdown-divider"></li>
+                               <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+                             </ul>
+                           </div>
+                     </div>
+                 </div>
                </div>
             </div>
          </div>
       </nav>
    </header>
    <div class="container-fluid no-pad row">
-      <aside class="col-2 bg-navbar vh-100 text-center border-end border-dark">
+      <aside class="col-2 bg-navbar min-vh-100 text-center border-end border-dark">
          <h2 class="aside-title">
             Sản phẩm
          </h2>
@@ -76,28 +93,32 @@
       <div class="col-10 no-pad">
          <div class="row">
             <div class="bg-item  col-4 m-3 p-2 over-flow-hidden ms-5">
-               <input type="text" placeholder="Nhập tên gói" class="bg-white border-radius-80 mb-3 border-0 p-2">
+               <input type="text" placeholder="Nhập tên gói" class="bg-white border-radius-80 border-0 mb-2 p-2">
                <!-- <div class="d-inline-block float-end"> Chỉnh sửa </div> -->
-               <div class="d-inline-block">
-                  <img src="./image 2.png" alt="Test image" class="m-1 d-inline-block">
+               <div class="">
+                  <div class="">
+                     <div>
+                        <input type="text" placeholder="Số lượt mua" class="bg-white border-radius-80 mb-1 border-0 p-1 ps-2">
+                     </div>
+                  <div>
+                     <div class="text-black fit-content d-inline-block border-radius-80">
+                        <select class="form-select border-radius-80 px-4 pe-5" aria-label="One">
+                           <option selected>Thời gian giới hạn</option>
+                           <option value="1">1 tuần</option>
+                           <option value="2">2 tuần</option>
+                           <option value="3">3 tuần</option>
+                           <option value="4">4 tuần</option>
+                           
+                        </select>
+                     </div>
+                     <!-- <input type="text" placeholder="Thời gian giới hạn" class="bg-white border-radius-80 mb-1 border-0 p-1 ps-2"> -->
+                  </div>
+                  
+
                   <div class="d-inline-block">
-                     <div class="pt-2">
-                        <div>
-                           <input type="text" placeholder="Số lượt mua" class="bg-white border-radius-80 mb-1 border-0 p-1 ps-2">
-                        </div>
-                     <div>
-                        <div class="text-black fit-content d-inline-block ps-2 border-radius-5">
-                           <select class="form-select" aria-label="One">
-                              <option selected>Thời gian giới hạn</option>
-                              <option value="1">One</option>
-                              <option value="2">Two</option>
-                              <option value="3">Three</option>
-                           </select>
-                        </div>
-                        <!-- <input type="text" placeholder="Thời gian giới hạn" class="bg-white border-radius-80 mb-1 border-0 p-1 ps-2"> -->
+                     <img src="../images/sample-product.png" alt="Test image" class="m-1 d-inline-block">
                      </div>
-                     </div>
-                     <div>
+                     <div class="d-inline-block">
                         <button class="custom-background text-white border-radius-80 p-3 mt-2">Chọn ảnh</button>
                      </div>
                   </div>
@@ -115,24 +136,25 @@
             <h3 class="ms-4">Danh sách các sản phẩm</h3>
             <div class="bg-item  col-4 m-3 p-2 over-flow-hidden ms-5">
                <!-- <h3 class="d-inline-block"> Kem đánh răng</h3> -->
-               <input type="text" placeholder="Nhập tên sản phẩm" class="bg-white border-radius-80 mb-3 border-0 p-2">
+               <input type="text" placeholder="Nhập tên sản phẩm" class="bg-white border-radius-80 mb-2 border-0 p-2">
                <div class="d-inline-block">
-                  <div class="d-inline-block ms-5">
-                     <input type="text" placeholder="Nhập giá" class="bg-white border-radius-80 mb-3 border-0 p-2 half-of-width">
-                     <input type="text" placeholder="Số lượng giới hạn" class="bg-white border-radius-80 mb-3 border-0 p-2">                     
+                  <div class="d-inline-block ms-1">
+                     <input type="text" placeholder="Nhập giá" class="bg-white border-radius-80 mb-3 border-0 p-2 width-35 d-inline-block">
+                     <input type="text" placeholder="Số lượng giới hạn" class="bg-white border-radius-80 mb-3 border-0 p-2 d-inline-block">                     
                   </div>
                   </div>
                   <div class="d-inline-block mt-3 mx-auto pe-auto">
-                     <i class='fas fa-angle-left' style='font-size:40px'></i>
-                     <img src="./image 2.png" width="90" alt="Test image" class="ms-1 d-inline-block">      
-                     <img src="./image 2.png" width="90"alt="Test image" class="ms-1 d-inline-block">
-                     <img src="./image 2.png" width="90" alt="Test image" class="ms-1 d-inline-block">
-                     <button class="custom-background text-white border-radius-80 ps-4 pe-4 ms-3">Lưu</button>
-                     <button class="custom-background text-white border-radius-80 ps-4 pe-4 ms-3">Lưu</button>
-                     <button class="custom-background text-white border-radius-80 ps-4 pe-4 ms-3">Lưu</button>
-                     <i class='fas fa-angle-right' style='font-size:40px'></i>
+                     <i class='fas fa-angle-left' style='font-size:40px; margin-right: .4rem;'></i>
+                     <img src="../images/sample-product.png" width="100" alt="Test image" class="ms-2 d-inline-block">      
+                     <img src="../images/sample-product.png" width="100"alt="Test image" class="ms-2 d-inline-block">
+                     <img src="../images/sample-product.png" width="100" alt="Test image" class="ms-2 d-inline-block">
+                     <i class='fas fa-angle-right' style='font-size:40px; margin-left: 1rem;'></i>
+                     <button class="custom-background text-white border-radius-80 ps-4 ms-5 m-3 pe-4 ms-3">Xóa</button>
+                     <button class="custom-background text-white border-radius-80 ps-4 m-3 pe-4 ms-3">Xóa</button>
+                     <button class="custom-background text-white border-radius-80 ps-4 m-3 pe-4 ms-3">Xóa</button>
+                     
                   </div>
-                  <div>
+                  <div class="text-center">
                      <button class="bg-dark text-white border-radius-80 ps-4 pe-4">Hủy</button>
                      <button class="custom-background text-white border-radius-80 ps-4 pe-4 ms-3">Lưu</button>
                   </div>
