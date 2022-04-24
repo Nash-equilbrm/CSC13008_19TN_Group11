@@ -6,8 +6,6 @@ body{
 .container-fluid    {
     padding:0;
     height:100vh;
-    display:flex;
-    flex-direction:column;
 }
 
 header{
@@ -24,26 +22,56 @@ header h1{
     text-shadow: 2px 2px 2px #000;
 }
 
+
+#username{
+    line-height: 50px;
+}
+.container{
+    display: block;
+}
+
+#submit{
+    color: white;
+    background-color: #609B53;
+    width: 15%;
+    border-radius: 10px;
+}
+
+input{
+    border-radius: 10px
+    !important;
+
+}
+#money-icon{
+    margin: 5em;
+}
+
+#forgot-pass{
+   color:blue;
+}
+
 #profile-area{
     position: absolute;
-    right: 20px;
+    right: 80px;
     gap:10px;
     align-items: center;
     display:flex;
     flex-direction: row;
-    height:50px;
 }
 #username{
     line-height: 50px;
 }
+#home{
+    line-height: 50px;
+}
 
-.balance{
-    margin: 7em 0;
+a{
+    text-decoration: none;
     color: #609B53;
 }
 
-.text{
-    font-weight: 500;
-    margin-top: 1.5em;
-    font-size:x-large;
+img{
+    width: 10em;
+    margin: 0;
+    padding: 0;
 }

@@ -6,6 +6,8 @@ body{
 .container-fluid    {
     padding:0;
     height:100vh;
+    display:flex;
+    flex-direction:column;
 }
 
 header{
@@ -22,33 +24,37 @@ header h1{
     text-shadow: 2px 2px 2px #000;
 }
 
+#username{
+    line-height: 50px;
+}
+
+.balance{
+    margin: 7em 0;
+    color: #609B53;
+}
+
+.text{
+    font-weight: 500;
+    margin-top: 1.5em;
+    font-size:x-large;
+}
+
 #profile-area{
     position: absolute;
-    right: 20px;
+    right: 80px;
     gap:10px;
     align-items: center;
     display:flex;
     flex-direction: row;
-    height:50px;
 }
 #username{
     line-height: 50px;
 }
-.container{
-    display: block;
+#home{
+    line-height: 50px;
 }
 
-#money-icon{
-    margin-top: 5em;
-    margin-bottom: 2em;
+a{
+    text-decoration: none;
+    color: #609B53;
 }
-
-button{
-    margin: 0 auto;
-    width: 20%;
-    background-color: #609B53
-    !important;
-    border-radius: 10px
-    !important;
-}
-
