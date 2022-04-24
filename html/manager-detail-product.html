@@ -14,52 +14,40 @@
    <title>ptudw-19120553</title>
 </head>
 <body>
-   <header>
-      <nav class="navbar navbar-expand-lg navbar-light align-items-start custom-background border-bottom border-dark">
-         <div class="container">
-            <a class="navbar-brand text-white" href="#">
-               COVID 19
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-between" id="navbarHeader">
-               <ul class="navbar-nav navbar-sub mb-2 mb-lg-0 mx-auto ">
-               <li class="nav-item">
-                  <a class="nav-link text-white" href="#">Trang chủ</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link text-white" href="#">Gói nhu yếu phẩm</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link text-white" href="#">Thông tin và quản lý</a>
-               </li>  
-               </ul>
-               <div class="align-items-end text-white border-2 rounded-pill" >
-                  <div id="profile-area" class="d-inline-block">
-                     <div class="">
-                         <i class="fa-solid fa-user "></i>
-                         <div class="btn-group">
-                             <button type="button" class="btn btn-infor dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                             </button>
-                             <ul class="dropdown-menu">
-                                <li>
-                                 <p id="username">Nguyễn Văn A</p>
-                                </li>
-                               <li><a class="dropdown-item" href="#">Đơn mua</a></li>
-                               <li><a class="dropdown-item" href="#">Hồ sơ cá nhân</a></li>
-                               <li><hr class="dropdown-divider"></li>
-                               <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
-                             </ul>
-                           </div>
-                     </div>
-                 </div>
-               </div>
-            </div>
-         </div>
+   <header class="d-flex flex-row">
+      <h1>COVID-19</h1>
+      <nav id="toolbar">
+          <a class="mx-5" id="to-homepage" href="#">Trang chủ</a>
+          <a class="mx-5" id="to-product-management" href="#">Gói nhu yêu phẩm</a>
       </nav>
-   </header>
-   <div class="container-fluid no-pad row">
+      <div class="dropdown me-5" id="satistic-pop-up">
+          <button class="dropbtn">Thống kê và quản lý </button>
+          <div class="dropdown-content">
+              <a href="../html/manager-add-people-related-to-covid.htm">Quản lý người liên quan đến COVID</a>
+              <a href="#">Thống kê số liệu</a>
+              <a href="#">Điều chỉnh mức thanh toán tối thiểu</a>
+          </div>
+      </div>
+
+      
+
+      <div id="profile-area" class="d-flex flex-row">
+          
+          <!-- <i class="fa-solid fa-user "></i> -->
+          <p id="username">Nguyễn Văn A</p>
+          <button id="btn-profile" class="border-0 bg-transparent"><i class="fa-solid fa-user"></i></button>
+
+          <div class="dropdown" id="account-menu-pop-up">
+              <button id="btn-profile" class="border-0 bg-transparent"><i class="fa-solid fa-caret-down"></i></button>
+              <div class="dropdown-content">
+                  <a href="../html/manager-profile.htm">Tài khoản</a>
+                  <a href="#">Đăng xuất</a>
+              </div>
+          </div>
+      
+      </div>
+  </header>
+   <div class="container-fluid no-pad row bg-white">
       <aside class="col-2 bg-navbar vh-100 text-center border-end border-dark">
          <h2 class="aside-title">
             Sản phẩm
