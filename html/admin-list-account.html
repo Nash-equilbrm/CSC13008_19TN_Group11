@@ -14,18 +14,6 @@
 
 <body>
   <div class="container-fluid">
-    <!-- <header class="d-flex flex-row">
-            <h1>COVID-19</h1>
-            <nav id="toolbar">
-                <a class="mx-4" id="to-homepage" href="#">Trang chủ</a>
-            </nav>
-
-            <div id="profile-area" class="d-flex flex-row">
-                <p id="username">admin</p>
-                <button id="btn-profile" class="border-0 bg-transparent"><i class="fa-solid fa-caret-down"></i></button>
-            </div>
-        </header> -->
-
     <header class="d-flex flex-row">
       <h1>COVID-19</h1>
       <nav id="toolbar">
@@ -33,8 +21,8 @@
         <a class="mx-5" id="to-admin" href="#">Quản lý</a>
       </nav>
       <div id="profile-area" class="d-flex flex-row">
-        <p id="username">admin</p>
-        <div class="dropdown" id="account-menu-pop-up">
+        <p id="adminLabel">admin</p>
+        <div class="dropdown" id="account-menu-pop-up bg-transparent">
           <button id="btn-profile" class="border-0 bg-transparent"><i class="fa-solid fa-caret-down"></i></button>
           <div class="dropdown-content">
             <a href="#">Đăng xuất</a>
@@ -43,7 +31,7 @@
       </div>
     </header>
     <div class="main">
-      <aside class="row-cols-1 m-0 p-0">
+      <aside id="menu" class="row-cols-1 m-0 p-0">
         <form id="account-list" action="../html/admin-list-account.html">
         </form>
         <form id="destination-list" action="../html/admin-list-destination.html">
@@ -52,27 +40,27 @@
         <button id="destination-list" class="btn function-btn" form="destination-list"><b>Địa điểm</b></button>
       </aside>
       <div id="content">
-
         <div class="search-bar">
-          <form class="search-form w-50 my-2 mx-2 ps-4 rounded-3 ">
+          <form class="search-form w-50 my-2 mx-2 ps-1 rounded-3 ">
             <input class="form-control border-0" type="search" placeholder="Nhập thông tin muốn tìm kiếm"
               aria-label="Search" autocomplete>
             <button class="btn" type="submit" class="float-end"><i class="fa-solid fa-magnifying-glass"></i></button>
           </form>
         </div>
-        <table class="mx-3 table table-striped table-hover ">
+        <table class=" table table-striped table-hover ">
           <thead>
             <tr>
-              <th scope="col">STT</th>
-              <th scope="col">ID</th>
-              <th scope="col">Tài khoản</th>
-              <th scope="col">Quyền</th>
+              <th scope="col" style="width: 10%">STT</th>
+              <th scope="col" style="width: 30%">ID</th>
+              <th scope="col" style="width: 30%">Tài khoản</th>
+              <th scope="col" style="width: 20%">Quyền</th>
               <th style="width: 10%" class="icon">
-                <img src="../images/add-icon.png" onclick="" alt="add-account">
+                <img src="../images/add-icon.png" alt="add-account" onclick="openPopUp()" id="addAccount">
               </th>
             </tr>
           </thead>
-          <tbody>
+
+          <tbody id="accounts" class="list-group-flush">
             <tr>
               <th scope="row">1</th>
               <td>1a2a1a545c1c</td>
@@ -80,9 +68,9 @@
               <td>Quản lý</td>
               <td>
                 <a href="admin-history-account.html">
-                  <img src="../images/history-icon.png" alt="history-account">
+                  <img class="btn-func" src="../images/history-icon.png" alt="history-account">
                 </a>
-                <img class="mx-3" onclick="" src="../images/unlocked-icon.png" alt="unlocked-icon">
+                <img class="mx-3 btn-func" onclick="" src="../images/unlocked-icon.png" alt="unlocked-icon">
               </td>
             </tr>
             <tr>
@@ -90,26 +78,50 @@
               <td>1a2a1a54533c</td>
               <td>NguyenVanb</td>
               <td>Người dùng</td>
+              <td>
+                <a href="admin-history-account.html">
+                  <img class="btn-func" src="../images/history-icon.png" alt="history-account">
+                </a>
+                <img class="mx-3 btn-func" onclick="" src="../images/unlocked-icon.png" alt="unlocked-icon">
+              </td>
             </tr>
             <tr>
               <th scope="row">3</th>
               <td>1a2a1a54544c</td>
               <td>NguyenVanv</td>
               <td>Người dùng</td>
+              <td>
+                <a href="admin-history-account.html">
+                  <img class="btn-func" src="../images/history-icon.png" alt="history-account">
+                </a>
+                <img class="mx-3 btn-func" onclick="" src="../images/unlocked-icon.png" alt="unlocked-icon">
+              </td>
             </tr>
             <tr>
               <th scope="row">4</th>
               <td>1a2a1a545c1c</td>
               <td>NguyenVanA</td>
               <td>Quản lý</td>
+              <td>
+                <a href="admin-history-account.html">
+                  <img class="btn-func" src="../images/history-icon.png" alt="history-account">
+                </a>
+                <img class="mx-3 btn-func" onclick="" src="../images/unlocked-icon.png" alt="unlocked-icon">
+              </td>
             </tr>
             <tr>
               <th scope="row">5</th>
               <td>1a2a1a54533c</td>
               <td>NguyenVanb</td>
               <td>Người dùng</td>
+              <td>
+                <a href="admin-history-account.html">
+                  <img class="btn-func" src="../images/history-icon.png" alt="history-account">
+                </a>
+                <img class="mx-3 btn-func" onclick="" src="../images/unlocked-icon.png" alt="unlocked-icon">
+              </td>
             </tr>
-            <tr>
+            <!--  <tr>
               <th scope="row">6</th>
               <td>1a2a1a54544c</td>
               <td>NguyenVanv</td>
@@ -198,12 +210,30 @@
               <td>1a2a1a54544c</td>
               <td>NguyenVanv</td>
               <td>Người dùng</td>
-            </tr>
+            </tr> -->
           </tbody>
         </table>
-
-        <div>
-          <nav id="list-of-resuls">
+        <div id="addAccountFrag" class="form-container">
+         
+          <img class="back-icon" src="../images/close-icon.png"  onclick="closePopUp()" alt="">
+          <div class="form-label text-center">
+            <h2>Tài khoản</h2>
+          </div>
+          <form id="form-account" class="inputform">
+            <label for="username">Tài khoản</label>
+            <input id="username" type="text" name="username" autocomplete="on" required>
+            <label for="password">Mật khẩu</label>
+            <input id="password" type="password" name="password" required>
+            <label for="role">Quyền</label>
+            <select name="role" id="role">
+              <option value="manage">Quản lý</option>
+              <option value="user">Người dùng</option>
+            </select>
+            <button id="btn-submit" class="btn btn-success" type="submit">Xác nhận</button>
+          </form>
+        </div>
+        <div id="list-of-resuls">
+          <nav>
             <a id="page-first" href="#"><b>&larr;</b></a>
             <a id="page1" href="#">1</a>
             <a id="page2" href="#">2</a>
@@ -213,16 +243,26 @@
             ...
             <a id="page-last" href="#"><b>&rarr;</b></a>
 
-
           </nav>
         </div>
       </div>
+
+
+
+
+
+
+
+
     </div>
   </div>
   <script src="https://kit.fontawesome.com/1de341d6e9.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
+
+  <script language="javascript" src="../js/admin-list-account.js"></script>
+
 </body>
 
 </html>
